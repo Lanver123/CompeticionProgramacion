@@ -28,6 +28,7 @@ int ram[1000];
 int registers[10];
 int inst_ptr;
 int halted;
+
 void initalize_memory()
 {
     halted = 0;
@@ -68,7 +69,7 @@ void operation(int opcode)
         case 8: 
             registers[op1] = ram[registers[op2]];
             break;
-        case 9: // REVISAR
+        case 9:
             ram[ registers[op2] ] = registers[op1];
             break;
         case 0: 

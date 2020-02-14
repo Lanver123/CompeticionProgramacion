@@ -1,3 +1,5 @@
+import sys
+
 # Permute letters, no two letters are replaced by the same Esto no => {a -> b, c -> b}
 # Alguna de las lineas siempre será "the quick brown fox jumps over the lazy dog"
 
@@ -7,61 +9,73 @@
 #       frtjrpgguvj otvxmdxd prm iev prmvx xnmq
 
 
-target = "the quick brown fox jumps over the lazy dog".split(" ")
+TARGET = "the quick brown fox jumps over the lazy dog"
+
+ALFABETO = "abcdefghijklmnopqrstuvwxyz"
+CONJUNTO_ALFABETO = set(ALFABETO)
+
+def leer_input():
+    lineas = []
+    while True:
+        linea = sys.stdin.readline()
+        if linea == "" or linea == "\n":
+            break
+        else:
+            lineas += [linea.strip()]
+    return lineas
+
+def traducir_linea(diccionario, linea):
+    return "".join([diccionario[letra] for letra in linea])
+
+def contiene_alfabeto(linea):
+    return set(linea.replace(" ", "")) == CONJUNTO_ALFABETO
+
+def mismo_tam_target(linea):
+    if len(linea) != len(TARGET):
+        return False
+    
+    if linea.count(" ") != TARGET.count(" "):
+        return False
+    
+    for c1, c2 in zip(linea, TARGET):
+        if c1 == " " and c2 != c1: return False
+
+    return True
+
+#### PROGRAMA
 
 numcases = int(input())
 input() # blank line
+
 for case in range(numcases):
-    letras = {}
-    lines = []
-    while True:
-        try:
-            line = input()
-        except:
-            break
-        if line == "":
-            break
-        lines += [line.split(" ")]
+    lineas = leer_input()
+    dicc = {}
+    linea_fox = None
+    #Busqueda target
+    for linea in lineas:
+        if not mismo_tam_target(linea):
 
-# Encontrar el primer match con los tamaños de las palabras del target
-#   -> rellenar el abecedario con las correspondencias
-# Empezar desde la linea 0 traduciendo
-#   -> si encuentras una letra sin correspondencia. error
-
-    #Buscar target
-    encontrado = False
-    for line in lines:
-        if len(line) != len(target):
             continue
-        
-        i = 0
-        while i < len(line):
-            if len(target[i]) != len(line[i]):
-                break
-            i+=1
-        
-        # Encontrada coincidencia
-        if i == len(line):
-            for index1, word in enumerate(line):
-                for index2, letra in enumerate(word):
-                    letras[letra] = target[index1][index2]
-            
-            if(len(list(letras.values())) == len(set(letras.values()))):
-                encontrado = True
-                break
-
-    #Con el target encontrado, traducir
-    if len(letras.keys()) != 26 or not encontrado:
+        if not contiene_alfabeto(linea):
+            continue
+        linea_fox = linea
+    
+    if linea_fox is None:
         print("No solution.")
     else:
-        for line in lines:
-            print_line = ""
-            for word in line: 
-                for letra in word:
-                    print_line += letras[letra]
-                print_line += " " 
-            print(print_line.strip())
+        for c1, c2 in zip(linea_fox, TARGET):
+            dicc[c1] = c2
+
+        for linea in lineas:
+            print(traducir_linea(dicc, linea))
+
+    if case < numcases-1:
+        print()
+        
+
+
+
+
     
-    print()
 
-
+            

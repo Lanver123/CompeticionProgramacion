@@ -9,4 +9,4 @@ bridge|Victor
 CDVII|Marc
 Interpreter|Marc/Victor
 PokerHands|Victor
-Crypt_Kicker|90%(Marc)
+Crypt_Kicker|Marc

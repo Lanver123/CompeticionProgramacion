@@ -10,3 +10,4 @@ CDVII|Marc
 Interpreter|Marc/Victor
 PokerHands|Victor
 Crypt_Kicker|Marc
+Waldorf|Marc

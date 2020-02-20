@@ -9,5 +9,6 @@ bridge|Victor
 CDVII|Marc
 Interpreter|Marc/Victor
 PokerHands|Victor
-Crypt_Kicker|Marc
+Crypt_Kicker_II|Marc
+Crypt_Kicker_I|Victor
 Waldorf|Marc

@@ -4,6 +4,7 @@ Problema solucionado |Persona
 australianVoting(lvl 1) |Victor
 shellShort|Victor
 shoemaker|Victor
+counting|Victor
 StackOfFlapjacks|Marc/Victor
 ones|Victor
 bridge|Victor

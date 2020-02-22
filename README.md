@@ -5,6 +5,7 @@ australianVoting(lvl 1) |Victor
 shellShort|Victor
 shoemaker|Victor
 counting|Victor
+selfDescribingSequence|Victor
 StackOfFlapjacks|Marc/Victor
 ones|Victor
 bridge|Victor

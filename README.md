@@ -10,6 +10,11 @@ selfDescribingSequence|Victor
 StackOfFlapjacks|Marc/Victor
 ones|Victor
 bridge|Victor
+hartals|Victor
+erdosNumber|Victor
+fileFragmentation|Victor
+completeTreeLabeling|Victor
+colorHash|Victor
 CDVII|Marc
 Interpreter|Marc/Victor
 PokerHands|Victor

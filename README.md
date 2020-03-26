@@ -23,3 +23,4 @@ Crypt_Kicker_I	|	Victor
 Waldorf	|	Marc
 Vito (Lvl 1)	|	Marc
 Carmichael	|	Marc
+Hanoi Troubles | Marc

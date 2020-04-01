@@ -9,6 +9,7 @@ counting	|	Victor
 selfDescribingSequence	|	Victor
 StackOfFlapjacks	|	Marc/Victor
 ones	|	Victor
+freckles	|	Victor
 bridge	|	Victor
 hartals	|	Victor
 erdosNumber	|	Victor

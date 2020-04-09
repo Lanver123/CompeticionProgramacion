@@ -26,3 +26,4 @@ Waldorf	|	Marc
 Vito (Lvl 1)	|	Marc
 Carmichael	|	Marc
 Hanoi Troubles | Marc
+Yahtzee | Marc

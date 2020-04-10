@@ -11,6 +11,7 @@ selfDescribingSequence	|	Victor
 StackOfFlapjacks	|	Marc/Victor
 ones	|	Victor
 freckles	|	Victor
+distinctSubsequence	|	Victor
 bridge	|	Victor
 hartals	|	Victor
 erdosNumber	|	Victor

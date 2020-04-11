@@ -14,6 +14,8 @@ freckles	|	Victor
 distinctSubsequence	|	Victor
 bridge	|	Victor
 hartals	|	Victor
+grandDinner | Victor
+necklace | Victor
 erdosNumber	|	Victor
 fileFragmentation	|	Victor
 completeTreeLabeling	|	Victor

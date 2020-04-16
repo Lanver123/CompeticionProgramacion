@@ -20,6 +20,8 @@ erdosNumber	|	Victor
 fileFragmentation	|	Victor
 completeTreeLabeling	|	Victor
 colorHash	|	Victor
+multiplicationGame | Victor
+chopsticks | Victor
 CDVII	|	Marc
 Interpreter	|	Marc/Victor
 PokerHands	|	Victor

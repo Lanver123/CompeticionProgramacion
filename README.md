@@ -21,6 +21,8 @@ fileFragmentation	|	Victor
 completeTreeLabeling	|	Victor
 colorHash	|	Victor
 multiplicationGame | Victor
+doublets | Victor
+expressions | Victor
 chopsticks | Victor
 CDVII	|	Marc
 Interpreter	|	Marc/Victor
